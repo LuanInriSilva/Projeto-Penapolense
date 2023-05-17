@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('font/BebasNeue-Regular.ttf') format('truetype');
+}
+
+:root{
+    --cor1:#F2CB05;
+    --cor2:#040DBF;
+    --cor3:#0511F2;
+    --cor4:#d40707;
+    
+    --fonte-destaque:'Bebas Neue','cursive';
+    --fonte-padrao:Arial,helvetica, sans-serif;
+
+    --fonte-tamanho-principal:40px;
+    --fonte-tamanho-secundario:30px;
+    --fonte-tamanho-padrao:20px;
+}
+
+body{
+    font-family: var(--fonte-padrao);
+}
+
+header{
+    background-color: var(--cor4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.329);
+    min-width: 300px;
+    max-width: 1360px;
+
+}
+
+header h1{
+    font-family: var(--fonte-destaque);
+    font-weight: normal;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    text-shadow: 4px 3px 12px black;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+header img{
+    width: 100px; ;
+    height: 100px;
+}
+
+header #penapolense{
+    width: 130px;
+    height: 130px;
+}
+
+nav{
+    background-color: var(--cor3);
+    font-weight: bold;
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.377);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav a:hover{
+    background-color: var(--cor1);
+    padding: 10px;
+}
+
+nav ul{
+    list-style: none;
+    display:inline-flex;
+    margin-left: 550px;
+}
+
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.37);
+    border-radius: 0px 0px 10px 10px;
+}
+
+main h2{
+    text-indent: 15px;
+    font-family: var(--fonte-destaque);
+    color: var(--cor2);
+    padding-bottom: 10px;
+    font-size: var(--fonte-tamanho-principal);
+}
+
+main  h3{
+    font-size: var(--fonte-tamanho-secundario);
+    background-image: linear-gradient(to right, var(--cor1),transparent);
+    margin: 10px 0px 10px 15px;
+}
+
+main p{
+    margin: 15px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1em;
+}
+
+main strong{
+    font-weight: bold;
+    color: var(--cor4);
+}
+
+article{
+    font-size: var(--fonte-tamanho-padrao);
+}
+
+article .box{
+    display: inline-flex;
+}
+
+article .box img{
+    margin-right: 10px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+article .box p{
+    text-align: justify;
+    text-indent: 15px;
+}
+
+.credito{
+    text-indent: 15px;
+}
+
+#grupob{
+    display: block;
+    margin: auto;
+    max-width: 970px;
+}
+
+#artilharia{
+    max-width: 500px;
+}
+
+
+#jogospaulista{
+    width: 500px;
+}
+
+footer{
+    background-color: var(--cor4);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#credito{
+    font-size: 14px;
+    color: var(--cor1);
+}
+
+footer  a{
+    text-decoration: none;
+    color: var(--cor1);
+}
+
+footer a:hover{
+    text-decoration: underline;
+}

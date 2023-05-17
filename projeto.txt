@@ -1,0 +1,3 @@
+#F2CB05 vermelho 
+#0511F2 azul  #0511F2 azul forte
+#040DBF amarelo
